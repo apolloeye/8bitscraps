@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>8 Bit Scraps</title>
+	<%= stylesheet_link_tag "style" %>
+</head>
+<body>
+	<div id="banner">
+		
+
+		<div id="navigation">
+			<ul>
+				<li><%= link_to 'Home' %></li>
+				<li><%= link_to 'Projects'%></li>
+				<li><%= link_to 'Blog' %></li>
+				<li><%= link_to 'Contact' %></li>
+			</ul>
+		</div>
+		<div id="social">
+			<ul>
+				<li><a href="http://feeds.feedburner.com/8bit/scraps" target="_blank"><%= image_tag("rss.png", :size => '27x27') %></a></li>
+				<li><a href="http://twitter.com/#!/8bitscraps" target="_blank"><%= image_tag("twitter.png", :size => '40x40', :style => 'margin-top:-5px;') %></a></li>
+				
+				<li><a href="https://github.com/bitscraps" target="_blank"><%= image_tag("github_logo.png", :size => '30x30')%></a></li>
+						
+			</ul>
+		</div>
+  	</div>
+
+	<div id="header"><%= image_tag "8bitscraps.png" %></div>
+	<div id="content">
+	<%= yield %>
+	</div>
+	
+	
+</body>
+</html>
