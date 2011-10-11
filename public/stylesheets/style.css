@@ -1,0 +1,83 @@
+a {
+  color: #FFFFFF; }
+  a img {
+    border: 0px; }
+
+body {
+  font-family: Arial, Verdana, Helvetica, Times New Roman;
+  background-color: #ececec;
+  margin: 0px;
+  padding: 0px; }
+
+#banner {
+  width: 960px;
+  margin: auto; }
+  #banner #navigation {
+    float: right;
+    background-color: #8b9b4c;
+    margin-top: -8px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-bottom-left: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottom-right: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    -moz-box-shadow: 5px 5px  5px #888; }
+    #banner #navigation ul {
+      margin: 10px;
+      padding: 0px;
+      padding-top: 8px;
+      height: 18px;
+      margin-left: 20px;
+      margin-right: 0px; }
+      #banner #navigation ul li {
+        float: left;
+        list-style-type: none;
+        margin-left: 0px;
+        margin-right: 20px; }
+        #banner #navigation ul li a {
+          margin-top: 5px;
+          color: #FFFFFF;
+          text-decoration: none;
+          text-shadow: 0 0 3px #333; }
+  #banner #social {
+    float: right;
+    background-color: #8b9b4c;
+    margin-right: 40px;
+    margin-top: -8px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-bottom-left: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottom-right: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    -moz-box-shadow: 5px 5px  5px #888; }
+    #banner #social ul {
+      margin: 10px;
+      margin-top: 5px;
+      padding: 0px;
+      padding-top: 8px;
+      height: 25px;
+      margin-left: 15px;
+      margin-right: 0px; }
+      #banner #social ul li {
+        float: left;
+        list-style-type: none;
+        margin-left: 0px;
+        margin-right: 10px; }
+        #banner #social ul li a {
+          margin-top: 5px;
+          color: #FFFFFF;
+          text-decoration: none;
+          text-shadow: 0 0 3px #333; }
+
+#header {
+  clear: both;
+  width: 960px;
+  margin: auto; }
+
+#content {
+  width: 960px;
+  margin: auto; }
