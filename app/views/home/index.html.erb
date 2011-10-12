@@ -1,2 +1,30 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+	<div id="slidedeck_frame" class="skin-slidedeck" style="margin-left:5px;margin-top:30px;">
+		<dl class="slidedeck">
+			<dt>What is 8Bit Scraps?</dt>
+			<dd>Slide content</dd>
+			<dt>New Project: Hostee</dt>
+			<dd>Slide content</dd>
+			<dt>5 Reasons to use Sass</dt>
+			<dd>Slide content</dd>
+			<dt>Slide 4</dt>
+		<dd>Slide content</dd>
+		<dt>Slide 5</dt>
+		<dd>Slide content</dd>
+	</dl>
+</div>
+<script type="text/javascript">
+	$('.slidedeck').slidedeck();
+</script>
+
+<div class="latest blog">
+	<h2>Blog</h2>
+</div>
+
+<div class="latest github">
+	<h2>Github</h2>
+	<%= get_github_commits %>
+</div>
+
+<div class="latest twitter">
+	<h2>Twitter</h2>
+</div>

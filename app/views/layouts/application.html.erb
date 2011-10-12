@@ -2,6 +2,28 @@
 <head>
 	<title>8 Bit Scraps</title>
 	<%= stylesheet_link_tag "style" %>
+	
+	<!-- Include jQuery first. -->
+	<script type="text/javascript" src="/javascripts/jquery-1.3.2.min.js"></script>
+	
+    <!-- Include the below script, Copyright 2010, Brandon Aaron (http://brandonaaron.net/) for scrollwheel support. -->
+    <script type="text/javascript" src="/javascripts/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/slidedeck.skin.css" media="screen" />
+    <!-- Styles for the skin that only load for Internet Explorer -->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/slidedeck.skin.ie.css" media="screen,handheld" />
+    <![endif]-->
+	
+    <!-- Include the SlideDeck jQuery script. -->
+	<script type="text/javascript" src="/javascripts/slidedeck.jquery.lite.pack.js"></script>
+    
+    <style type="text/css">
+        #slidedeck_frame {
+            width: 901px;
+            height: 300px;
+        }        
+    </style>
 </head>
 <body>
 	<div id="banner">
@@ -9,10 +31,10 @@
 
 		<div id="navigation">
 			<ul>
-				<li><%= link_to 'Home' %></li>
-				<li><%= link_to 'Projects'%></li>
-				<li><%= link_to 'Blog' %></li>
-				<li><%= link_to 'Contact' %></li>
+				<li><%= link_to 'Home', :controller => 'home' %></li>
+				<li><%= link_to 'Projects', :controller => 'project' %></li>
+				<li><%= link_to 'Blog', :controller => 'blog' %></li>
+				<li><%= link_to 'Contact', :controller => 'contact' %></li>
 			</ul>
 		</div>
 		<div id="social">
@@ -27,10 +49,19 @@
   	</div>
 
 	<div id="header"><%= image_tag "8bitscraps.png" %></div>
+	
+	<hr>
+	
 	<div id="content">
 	<%= yield %>
 	</div>
+	<div style="clear:both;"></div>
 	
+	<div id="footer">
+		<div id="left-column"></div>
+		<div id="right-column"></div>
+		<div id="copyright"><center><p style="align:center">&copy; 2011  Graham Hadgraft</p></center>
+	</div>
 	
 </body>
 </html>

@@ -2,4 +2,5 @@ config/deploy.rb
 config/database.yml
 log/*
 tmp/*
-
+.DS_Store
+public/stylesheets/.sass-cache/*
