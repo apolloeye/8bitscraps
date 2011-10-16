@@ -181,3 +181,12 @@ hr {
     margin-bottom: 10px; }
   .github-commits .commit {
     margin-bottom: 5px; }
+
+.twitter-update {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 10px; }
+  .twitter-update .date {
+    width: 100%;
+    text-align: right;
+    font-weight: bold; }
