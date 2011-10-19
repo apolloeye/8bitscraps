@@ -70,6 +70,7 @@ body {
 					margin-top:5px;
 					color:#FFFFFF;
 					text-decoration:none;
+					font-size:16px;
 					text-shadow:0 0 3px #333;
 				}
 			}
@@ -117,7 +118,7 @@ body {
 	margin:auto;
 }
 
-#content {
+#content-container {
 	width:960px;
 	margin:auto;
 	margin-bottom:30px;
@@ -275,4 +276,14 @@ hr {
 		font-weight:bold;
 	}
 
+}
+
+#container {
+	width:66%;
+	float:left;
+}
+
+#primary {
+	width:33%;
+	float:right;
 }
