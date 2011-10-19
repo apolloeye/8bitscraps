@@ -6,7 +6,7 @@ module ApplicationHelper
   require 'twitter'
   
   def get_github_commits
-    feed = SimpleRSS.parse open('http://github.com/bitscraps.atom')
+    feed = SimpleRSS.parse open('https://github.com/bitscraps.atom')
     @text = ''
     @commits = 0
     feed.entries.each do |entry|
