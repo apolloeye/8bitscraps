@@ -197,7 +197,7 @@ hr {
   float: left; }
 
 #primary {
-  width: 33%;
+  width: 30%;
   float: right; }
 
 .widget-area ul {
@@ -222,7 +222,7 @@ ul.xoxo {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px SOLID #AAAAAA;
-  width: 30%;
+  width: 100%;
   color: #000000;
   -webkit-box-shadow: inset 5px 5px 5px #888;
   -moz-box-shadow: inset 5px 5px  5px #888; }
