@@ -284,7 +284,7 @@ hr {
 }
 
 #primary {
-	width:30%;
+	width:29%;
 	float:right;
 }
 
@@ -307,13 +307,17 @@ ul.xoxo {
 	margin:0px;
 }
 
+.widget-area ul li {
+	background-color:#888888;
+}
+
 .widget-container ul {
 	background-color:#FFFFFF;
-	padding:5px;
+	padding:10px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
-	border:1px SOLID #AAAAAA;
+	border:1px SOLID #CCCCCC;
 	width:100%;
 	color:#000000;
 	@include box-shadow-inset;
