@@ -215,8 +215,8 @@ ul.xoxo {
   padding: 0px;
   margin: 0px; }
 
-.widget-area ul li {
-  background-color: #888888; }
+.widget-area ul li a {
+  color: #888888; }
 
 .widget-container ul {
   background-color: #FFFFFF;
