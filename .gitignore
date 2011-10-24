@@ -4,3 +4,5 @@ log/*
 tmp/*
 .DS_Store
 public/stylesheets/.sass-cache/*
+public/blog/wp-content/plugins/*
+public/blog/wp-content/uploads/*
