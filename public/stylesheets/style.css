@@ -221,8 +221,11 @@ ul.xoxo {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: inset 0px 0px 5px #888;
-  -moz-box-shadow: inset 0px 0px  5px #888; }
+  border: 1px SOLID #AAAAAA;
+  width: 30%;
+  color: #000000;
+  -webkit-box-shadow: inset 5px 5px 5px #888;
+  -moz-box-shadow: inset 5px 5px  5px #888; }
 
 ul li {
   list-style-type: none; }
