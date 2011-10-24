@@ -23,6 +23,11 @@ $background-color: #ECECEC;
 	-moz-box-shadow:inset 5px 5px  5px #888;
 }
 
+@mixin box-shadow-inset-small {
+	-webkit-box-shadow:inset 3px 3px 5px #888;
+	-moz-box-shadow:inset 3px 3px  5px #888;
+}
+
 a {
 	color:#FFFFFF;
 	
@@ -308,7 +313,7 @@ ul.xoxo {
 }
 
 .widget-area ul li a {
-	color:#888888;
+	color:#333333;
 }
 
 .widget-container ul {
@@ -320,7 +325,7 @@ ul.xoxo {
 	border:1px SOLID #CCCCCC;
 	width:100%;
 	color:#000000;
-	@include box-shadow-inset;
+	@include box-shadow-inset-small;
 
 }
 

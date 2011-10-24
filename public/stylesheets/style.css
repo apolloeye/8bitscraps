@@ -216,7 +216,7 @@ ul.xoxo {
   margin: 0px; }
 
 .widget-area ul li a {
-  color: #888888; }
+  color: #333333; }
 
 .widget-container ul {
   background-color: #FFFFFF;
@@ -227,8 +227,8 @@ ul.xoxo {
   border: 1px SOLID #CCCCCC;
   width: 100%;
   color: #000000;
-  -webkit-box-shadow: inset 5px 5px 5px #888;
-  -moz-box-shadow: inset 5px 5px  5px #888; }
+  -webkit-box-shadow: inset 3px 3px 5px #888;
+  -moz-box-shadow: inset 3px 3px  5px #888; }
 
 ul li {
   list-style-type: none; }
