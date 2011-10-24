@@ -297,12 +297,31 @@ ul.xoxo {
 	list-style-type:none;
 }
 
+.widget-area {
+	margin-left:20px;
+}
+
 .widget-area ul li {
 	list-style-type:none;
 	padding:0px;
 	margin:0px;
 }
 
+.widget-container ul {
+	background-color:#FFFFFF;
+	padding:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow:inset 0px 0px 5px #888;
+	-moz-box-shadow:inset 0px 0px  5px #888;
+
+}
+
 ul li {
 	list-style-type:none;
+}
+
+.widget-search {
+	margin-top:20px;
 }
