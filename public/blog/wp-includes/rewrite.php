@@ -767,7 +767,7 @@ class WP_Rewrite {
 		global $wpdb;
 
 		//get pages in order of hierarchy, i.e. children after parents
-		$posts = get_page_hierarchy( $wpdb->get_results("SELECT ID, post_name, post_parent FROM $wpdb->posts WHERE post_type = 'page' AND post_status != 'auto-draft'") );
+		$posts = get_page_hierarchy($wpdb->get_results("SELECT ID, post_name, post_parent FROM $wpdb->posts WHERE post_type = 'page'"));
 
 		// If we have no pages get out quick
 		if ( !$posts )
@@ -1857,8 +1857,6 @@ class WP_Rewrite {
 	function add_permastruct($name, $struct, $with_front = true, $ep_mask = EP_NONE) {
 		if ( $with_front )
 			$struct = $this->front . $struct;
-		else
-			$struct = $this->root . $struct;
 		$this->extra_permastructs[$name] = array($struct, $ep_mask);
 	}
 
@@ -1976,14 +1974,14 @@ class WP_Rewrite {
 	}
 
 	/**
-	 * Constructor - Calls init(), which runs setup.
+	 * PHP4 Constructor - Calls init(), which runs setup.
 	 *
 	 * @since 1.5.0
 	 * @access public
 	 *
 	 * @return WP_Rewrite
 	 */
-	function __construct() {
+	function WP_Rewrite() {
 		$this->init();
 	}
 }
