@@ -6,6 +6,6 @@
 		<div id="right-column"></div>
 		<div id="copyright"><center><p style="align:center">&copy; 2011  Graham Hadgraft</p></center>
 	</div>
-	
+<?php wp_footer(); ?>	
 </body>
 </html>
