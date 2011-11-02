@@ -13,7 +13,8 @@
  *
  * @package WordPress
  */
-
+define('WP_HOME','http://8bitscraps/blog');
+define('WP_SITEURL','http://8bitscraps/blog');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', '8bs_wordpress');
@@ -25,7 +26,7 @@ define('DB_USER', 'bitscraps');
 define('DB_PASSWORD', 'tu7cw3ba');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '127.0.0.1');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

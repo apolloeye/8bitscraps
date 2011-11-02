@@ -47,15 +47,36 @@
 					</div><!-- #entry-author-info -->
 <?php endif; ?>
 					<br><br>
-					<div class="entry-meta">
-						<?php twentyten_posted_on(); ?>
-					</div><!-- .entry-meta -->
-
-
-					<div class="entry-utility">
-						<?php twentyten_posted_in(); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
-					</div><!-- .entry-utility -->
+					
+					<div style="float:left;">
+						<img src="/images/pencil.png">
+						
+					</div>
+					<div style="float:left; margin-left:10px;padding-top:3px;">
+						<?php the_category('l, F jS, Y') ?>
+					</div>
+					<div style="float:left;margin-left:20px;">
+						<img src="/images/calendar.png">
+					</div>
+					<div style="float:left;margin-left:10px;padding-top:3px;">
+						<?php the_time('l, F jS, Y') ?>					</div>
+					<div style="float:left;margin-left:20px;">
+						<img src="/images/person.png">
+					</div>
+					<div style="float:left;margin-left:10px;padding-top:3px;">
+						<?php the_author() ?>
+					</div>
+					
+					<div style="clear:both;float:left;margin-top:10px;">
+	<img src="/images/tag.png">
+</div>
+<div style="float:left;margin-top:10px;margin-left:10px;">
+ <?php the_tags() ?>
+</div>
+					<div style="clear:both;"></div
+					<br><br>
+					
+					
 				</div><!-- #post-## -->
 
 				<div id="nav-below" class="navigation">
