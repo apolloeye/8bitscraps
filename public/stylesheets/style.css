@@ -96,11 +96,12 @@ hr {
 
 .project-container {
   width: 740px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  float: left; }
   .project-container .project {
-    padding-top: 40px;
-    clear: both; }
+    padding-top: 40px; }
     .project-container .project .thumb {
+      margin-top: 20px;
       width: 150px;
       height: 150px;
       background-color: #FFFFFF;
@@ -112,6 +113,7 @@ hr {
       -webkit-box-shadow: inset 5px 5px 5px #888;
       -moz-box-shadow: inset 5px 5px  5px #888; }
     .project-container .project .details {
+      margin-top: 20px;
       padding: 20px;
       width: 520px;
       margin-left: 20px;
@@ -130,6 +132,28 @@ hr {
         .project-container .project .details p a {
           color: #000000;
           font-weight: bold; }
+
+.project-sidebar {
+  float: right;
+  width: 190px;
+  padding-top: 20px;
+  padding-left: 30px; }
+  .project-sidebar h2 {
+    padding-top: 5px;
+    margin-top: 0px;
+    color: #888888;
+    text-shadow: black -1px -1px 1px; }
+  .project-sidebar ul {
+    margin-left: 0px;
+    padding-left: 0px; }
+    .project-sidebar ul li {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      margin-bottom: 5px; }
+      .project-sidebar ul li a {
+        color: #666;
+        text-decoration: none; }
 
 .latest {
   padding-top: 0px;
@@ -278,6 +302,7 @@ ul li {
   left: 0;
   right: 0;
   overflow: hidden;
+  border: 1px SOLID #D0D0D0;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -329,3 +354,10 @@ ul li {
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px; }
+
+h2 a {
+  text-decoration: none;
+  padding-top: 5px;
+  margin-top: 0px;
+  color: #888888;
+  text-shadow: black -1px -1px 1px; }
