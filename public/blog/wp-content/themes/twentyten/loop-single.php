@@ -53,7 +53,7 @@
 						
 					</div>
 					<div style="float:left; margin-left:10px;padding-top:3px;">
-						<?php the_category('l, F jS, Y') ?>
+						<?php the_category() ?>
 					</div>
 					<div style="float:left;margin-left:20px;">
 						<img src="/images/calendar.png">
