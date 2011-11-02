@@ -18,6 +18,12 @@
 
 <div class="latest blog">
 	<h2>Blog</h2>
+	
+	<% @posts.each do |post| %>
+	<ul>
+		<li><%= post.post_title %></li>
+	</ul>
+	<% end %>
 </div>
 
 <div id=latest_commits class="latest github">
