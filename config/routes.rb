@@ -38,6 +38,12 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/contact',
   	:controller => 'home',
   	:action => 'contact'
+  	
+  #Routes for the moving of blog posts between old blog and new
+  map.connect '/serialise-a-ruby-hash-into-a-database-field/',
+  	:controller => 'home',
+  	:action => 'redirect',
+  	:path => '/blog/serialise-a-ruby-hash-into-a-database-field/'
 
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
