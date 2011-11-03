@@ -189,14 +189,27 @@ hr {
   color: #CCCCCC;
   font-size: 14px;
   text-shadow: black -1px -1px 1px; }
-  #footer #left-column {
-    float: left;
-    height: 270px;
-    width: 33%; }
-  #footer #right-column {
-    float: right;
-    height: 270px;
-    width: 66%; }
+  #footer #footer-content {
+    width: 920px;
+    margin: auto; }
+    #footer #footer-content #left-column {
+      margin-top: 30px;
+      float: left;
+      height: 230px;
+      width: 40%; }
+      #footer #footer-content #left-column p {
+        text-align: justify; }
+    #footer #footer-content #right-column {
+      float: right;
+      height: 230px;
+      width: 50%;
+      margin-top: 30px;
+      margin-left: 50px; }
+      #footer #footer-content #right-column ul li {
+        margin-bottom: 10px; }
+        #footer #footer-content #right-column ul li a {
+          color: #CCCCCC;
+          font-size: 16px; }
   #footer #copyright {
     clear: both;
     bottom: 0px; }
