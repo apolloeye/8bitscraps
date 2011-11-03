@@ -27,4 +27,9 @@ class HomeController < ApplicationController
   	render :layout => false
   end
 
+  def redirect 
+  	if params[:path]
+  		redirect_to "#{params[:path]}", :status => :moved_permanently
+  	end
+  end
 end
