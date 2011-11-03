@@ -4,6 +4,19 @@ class HomeController < ApplicationController
   end
 
   def contact
+  	if request.post?
+  		if params[:name] != '' && params[:email] != '' && params[:comment] != '' && params[:email] =~ /(.*)\@(.*)\.(.*)/
+  			if Emailer.deliver_comment(params[:name], params[:email], params[:comment])
+  				@email_sent = true
+  			else
+  				@email_sent_error = true
+  			end
+  		else
+  		 	@errors = true
+  		end
+  		
+  		
+  	end
   end
  
   def latest_commits

@@ -1,2 +1,28 @@
-<h1>Home#contact</h1>
-<p>Find me in app/views/home/contact.html.erb</p>
+<h1>Contact Me</h1>
+<p>I'd like to hear from you contact me on twitter or using the contact form below</p>
+<br><br>
+
+<% if @email_sent == true %>
+	<p>Thanks for sending me a message.</p>
+<% else %>
+	<% if @error %>
+		<p>Sorry I could not send your email.  I need all the fields filled in aswell as a valid email address.</p>
+	<% end %>
+	<% if @email_sent_error %>
+		<p>Sorry I could not send your email.</p>
+	<% end %>
+	
+	<%= form_tag 'contact' %>
+		<label>Name</label>
+		<%= text_field_tag 'name', params[:name], :size => 32 %><br>
+		
+		<label>E-Mail</label>
+		<%= text_field_tag 'email', params[:email], :size => 32%><br>
+		
+		<label>Comment</label>
+		<%= text_area_tag 'comment', params[:comment], :cols => 48, :rows => 12 %><br>
+		
+		<%= submit_tag 'Send Email', :style => 'margin-left:100px; margin-top:20px;' %>
+	</form>
+
+<% end %>
