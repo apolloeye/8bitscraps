@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @posts = WordpressPost.find(:all, :conditions => "post_type = 'post' AND post_status = 'publish'", :limit => '5', :order => 'post_date DESC')
+    @posts = WordpressPost.find(:all, :conditions => "post_type = 'post' AND post_status = 'publish'", :limit => '9', :order => 'post_date DESC')
   end
 
   def contact

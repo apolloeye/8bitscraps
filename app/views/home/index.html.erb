@@ -21,7 +21,15 @@
 	
 	<% @posts.each do |post| %>
 	<ul>
-		<li><%= post.post_title %></li>
+		<li>
+			<div class="thumb-image">
+				<% if post.thumbnail %>
+					<img src="<%= post.thumbnail %>" height="35" width="35">  
+				<% else %>
+					
+				<% end %>
+			</div>
+		<a href="<% if post.permalink %><%= "/blog/#{post.permalink}" %><% else %><%= post.guid %><% end %>"><%= post.post_title %></a></li>
 	</ul>
 	<% end %>
 </div>

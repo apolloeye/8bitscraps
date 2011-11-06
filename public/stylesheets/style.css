@@ -171,6 +171,21 @@ hr {
 .blog {
   padding-right: 1%;
   width: 50%; }
+  .blog ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    clear: left; }
+    .blog ul li {
+      padding-top: 10px;
+      margin-left: 0px;
+      padding-left: 0px;
+      clear: left; }
+      .blog ul li a {
+        display: block;
+        padding-left: 10px;
+        color: #333; }
+      .blog ul li .thumb-image {
+        margin-right: 10px; }
 
 .github {
   padding-left: 1%;
