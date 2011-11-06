@@ -22,4 +22,10 @@ class WordpressPost < ActiveRecord::Base
   		return nil
   	end
   end
+  
+  def post_excerpt
+  	@post = super
+  	@post.gsub!(/\n/, "<br/>")
+  	@post = "#{@post}"
+  end
 end

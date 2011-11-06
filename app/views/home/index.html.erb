@@ -1,16 +1,32 @@
 	<div id="slidedeck_frame" class="skin-slidedeck" style="margin-left:5px;margin-top:30px;">
 		<dl class="slidedeck">
 			<dt>What is 8Bit Scraps?</dt>
-			<dd>Slide content</dd>
+			<dd>
+				<img src="/images/graham-large.jpg" style="float:left;margin-left:-30px;height:288px;">
+				<p>8 bit scraps has been created by Graham Hadgraft a web developer from Ipswich. Graham Hadgraft has 10 Years programming experience in various languages.</p>
+
+<p>The aim of 8 bit scraps is to provide programming tips for Ruby on Rails, PHP, Perl and any other programming info that people may find useful. As well as reviews of programming resources such as books, software and websites.</p>			
+			</dd>
 			<dt>New Project: Hostee</dt>
-			<dd>Slide content</dd>
-			<dt>5 Reasons to use Sass</dt>
-			<dd>Slide content</dd>
-			<dt>Slide 4</dt>
-		<dd>Slide content</dd>
-		<dt>Slide 5</dt>
-		<dd>Slide content</dd>
-	</dl>
+			<dd style="background-color:#ECECEC">
+				<div style="background-color:#ECECEC;height:297px;margin-top:-10px;margin-left:-20px;width:789px;">
+					<br><br><img src="/images/hostee-banner.png" style="margin-left:45px;">
+				</div>
+			</dd>
+			<dt><%= truncate(@posts.first.post_title, 30, "...") %></dt>
+			<dd class="blog-slide" style="overflow:hidden;">
+				<img src="<%= @posts.first.thumbnail %>" class="slidedeck-image" style="height:288px;margin-left:-100px;float:left;">
+				<div class="slidedeck-image-overlay" style="float:left; width:300px;;height:288px;margin-left:-300px;"></div>
+				
+					<h2 style=""><%= @posts.first.post_title %></h2>
+					<p>
+					<%= @posts.first.post_excerpt %><br><br>
+					<a href="<%= @posts.first.guid %>">Read the full article</a></p>
+				 
+			</dd>
+			<!--<dt>Latest Tweet</dt>
+			<dd>Slide content</dd>-->
+		</dl>
 </div>
 <script type="text/javascript">
 	$('.slidedeck').slidedeck();
