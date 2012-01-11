@@ -23,7 +23,7 @@ define('DB_NAME', '8bs_wordpress');
 define('DB_USER', 'bitscraps');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'tu7cw3ba');
+define('DB_PASSWORD', 'password');
 
 /** MySQL hostname */
 define('DB_HOST', '127.0.0.1');
